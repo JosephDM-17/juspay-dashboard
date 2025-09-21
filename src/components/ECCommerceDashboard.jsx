@@ -3,7 +3,7 @@ import { Card, Typography, Spin } from 'antd';
 import { fetchDashboardData } from '../api/dashboardData';
 import KPICards from './KPICards';
 import DashboardCharts from './DashboardCharts';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const { Title } = Typography;
 

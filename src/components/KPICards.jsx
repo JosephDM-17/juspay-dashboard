@@ -2,20 +2,20 @@ import React, { memo, useCallback } from 'react';
 import { Card, Typography } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import { FaArrowTrendUp, FaArrowTrendDown } from 'react-icons/fa6';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const { Text } = Typography;
 
 // KPI cards component with trend indicators and clickable Orders card
 const KPICards = ({ data = [], onNavigateToOrders }) => {
-  const { colors, isDarkMode } = useTheme();
+  const { colors } = useTheme();
   
   const colorMap = React.useMemo(() => ({
     background: [colors.kpiCustomer, colors.kpiOrders, colors.kpiRevenue, colors.kpiGrowth],
     text: [colors.kpiTextLight, colors.kpiTextDark, colors.kpiTextDark, colors.kpiTextLight]
   }), [colors]);
 
-  const getCardClassName = useCallback((color, index) => {
+  const getCardClassName = useCallback(() => {
     return 'kpi-card';
   }, []);
 
@@ -63,9 +63,6 @@ const KPICards = ({ data = [], onNavigateToOrders }) => {
     );
   }, [getCardTextColor]);
 
-  const getTrendClassName = useCallback((trendType) => {
-    return trendType === 'up' ? 'trend-up' : 'trend-down';
-  }, []);
 
   const handleCardClick = useCallback((index) => {
     if (index === 1 && onNavigateToOrders) { // Orders card

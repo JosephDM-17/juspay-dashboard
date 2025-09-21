@@ -5,10 +5,10 @@ import ProjectionsVsActuals from './projectionVsActual';
 import KPICards from './KPICards';
 import RevenueLineChart from './revenueLineChart';
 import SalesDonutChart from './donutChart';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 const { Title, Text } = Typography;
 
-const DashboardCharts = ({ projectionsData, revenueTrend, revenueByLocation, topSellingProducts, totalSales, kpiData, showOnlyProjections = false, onNavigateToOrders }) => {
+const DashboardCharts = ({ revenueByLocation, topSellingProducts, kpiData, onNavigateToOrders }) => {
   const { colors } = useTheme();
 
 

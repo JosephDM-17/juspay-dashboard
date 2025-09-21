@@ -5,7 +5,7 @@ import {
   EditOutlined,
   DeleteOutlined
 } from '@ant-design/icons';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const { Title, Text } = Typography;
 

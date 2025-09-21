@@ -25,7 +25,7 @@ import {
   StarOutlined,
   SwapOutlined
 } from '@ant-design/icons';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 import { IoFilter } from "react-icons/io5";
 import { BiSortAlt2 } from "react-icons/bi";
 
@@ -33,7 +33,7 @@ const { Title } = Typography;
 const { Search } = Input;
 
 // Data table component with filtering, sorting, pagination, and row selection
-const OrderList = ({ onBackToDashboard }) => {
+const OrderList = () => {
   const { colors } = useTheme();
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -167,7 +167,7 @@ const OrderList = ({ onBackToDashboard }) => {
       });
     }
     return extendedData;
-  }, []);
+  }, [orderData]);
 
   useEffect(() => {
     let filtered = allOrderData;

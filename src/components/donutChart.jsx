@@ -1,7 +1,7 @@
 import { Card } from 'antd';
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -102,7 +102,6 @@ const options = {
 export default function SalesDonutChart() {
   const { colors } = useTheme();
   const total = data.datasets[0].data.reduce((a, b) => a + b, 0);
-  const percentage = ((data.datasets[0].data[0] / total) * 100).toFixed(1);
 
   return (
     <Card className="rounded-xl min-w-[200px] h-full" style={{ backgroundColor: colors.cardBackgroundSecondary }}>

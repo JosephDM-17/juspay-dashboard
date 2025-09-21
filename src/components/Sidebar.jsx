@@ -5,7 +5,7 @@ import { PiChartPieSlice, PiShoppingBagOpen } from 'react-icons/pi';
 import { FiBookOpen } from 'react-icons/fi';
 import { BsFolder } from 'react-icons/bs';
 import { FileTextOutlined, MessageOutlined, RightOutlined, DownOutlined } from '@ant-design/icons';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const { Text } = Typography;
 
@@ -15,7 +15,6 @@ const Sidebar = ({
   setSelectedDashboardItem, 
   expandedDashboardItems, 
   setExpandedDashboardItems,
-  currentView,
   setCurrentView,
   setShowOrderList,
   selectedPageItem,
@@ -25,7 +24,7 @@ const Sidebar = ({
   setRightCollapsed
 }) => {
   const { colors, isDarkMode } = useTheme();
-  const [activeTab, setActiveTab] = useState('favorites');
+  const [activeTab] = useState('favorites');
 
   const favoritesItems = [
     { key: 'overview', label: 'Overview' },

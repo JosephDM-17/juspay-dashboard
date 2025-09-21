@@ -7,7 +7,7 @@ import OrderList from './OrderList';
 import RightSidebar from './RightSidebar';
 import ECCommerceDashboard from './ECCommerceDashboard';
 import Sidebar from './Sidebar';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../hooks/useTheme';
 
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
