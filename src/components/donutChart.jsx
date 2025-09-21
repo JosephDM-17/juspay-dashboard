@@ -101,7 +101,6 @@ const options = {
 
 export default function SalesDonutChart() {
   const { colors } = useTheme();
-  const total = data.datasets[0].data.reduce((a, b) => a + b, 0);
 
   return (
     <Card className="rounded-xl min-w-[200px] h-full" style={{ backgroundColor: colors.cardBackgroundSecondary }}>

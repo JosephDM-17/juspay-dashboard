@@ -1,8 +1,8 @@
 import React, { createContext, useState, useEffect } from 'react';
 
-export const ThemeContext = createContext();
+const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Check localStorage for saved theme preference
     const savedTheme = localStorage.getItem('theme');
@@ -83,3 +83,5 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
+export { ThemeContext, ThemeProvider };

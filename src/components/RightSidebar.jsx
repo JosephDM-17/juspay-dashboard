@@ -131,8 +131,8 @@ const RightSidebar = ({ collapsed, showNotifications, onToggleNotifications }) =
         </div>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {notifications.map((notification, index) => (
-            <div key={index} style={{ 
+          {notifications.map((notification) => (
+            <div key={notification.text} style={{ 
               display: 'flex', 
               alignItems: 'flex-start', 
               gap: '12px',
@@ -166,7 +166,7 @@ const RightSidebar = ({ collapsed, showNotifications, onToggleNotifications }) =
         
         <div className="timeline-container">
           <Timeline
-            items={activities.map((activity, index) => ({
+            items={activities.map((activity) => ({
               dot: (
                 <div style={{ 
                   width: '32px', 

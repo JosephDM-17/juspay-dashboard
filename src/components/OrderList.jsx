@@ -43,120 +43,120 @@ const OrderList = () => {
   const [sortOrder, setSortOrder] = useState('asc');
   const [filteredData, setFilteredData] = useState([]);
 
-  const orderData = [
-    {
-      key: '1',
-      orderId: 'CM9801',
-      user: 'Natali Craig',
-      userAvatar: '/src/assets/contact1.png',
-      project: 'Landing Page',
-      address: 'Meadow Lane Oakland',
-      date: 'Just now',
-      status: 'In Progress',
-      statusColor: '#1890ff'
-    },
-    {
-      key: '2',
-      orderId: 'CM9802',
-      user: 'Kate Morrison',
-      userAvatar: '/src/assets/contact2.png',
-      project: 'CRM Admin pages',
-      address: 'Larry San Francisco',
-      date: 'A minute ago',
-      status: 'Complete',
-      statusColor: '#52c41a'
-    },
-    {
-      key: '3',
-      orderId: 'CM9803',
-      user: 'Drew Cano',
-      userAvatar: '/src/assets/contact3.png',
-      project: 'Client Project',
-      address: 'Bagwell Avenue Ocala',
-      date: '1 hour ago',
-      status: 'Pending',
-      statusColor: '#13c2c2'
-    },
-    {
-      key: '4',
-      orderId: 'CM9804',
-      user: 'Orlando Diggs',
-      userAvatar: '/src/assets/contact4.png',
-      project: 'Admin Dashboard',
-      address: 'Washburn Baton Rouge',
-      date: 'Yesterday',
-      status: 'Approved',
-      statusColor: '#faad14'
-    },
-    {
-      key: '5',
-      orderId: 'CM9805',
-      user: 'Andi Lane',
-      userAvatar: '/src/assets/contact5.png',
-      project: 'App Landing Page',
-      address: 'Nest Lane Olivette',
-      date: 'Feb 2, 2023',
-      status: 'Rejected',
-      statusColor: '#8c8c8c'
-    },
-    {
-      key: '6',
-      orderId: 'CM9806',
-      user: 'Koray Okumus',
-      userAvatar: '/src/assets/contact6.png',
-      project: 'E-commerce Site',
-      address: 'Main Street New York',
-      date: 'Feb 1, 2023',
-      status: 'In Progress',
-      statusColor: '#1890ff'
-    },
-    {
-      key: '7',
-      orderId: 'CM9807',
-      user: 'Natali Craig',
-      userAvatar: '/src/assets/contact1.png',
-      project: 'Mobile App',
-      address: 'Oak Avenue Los Angeles',
-      date: 'Jan 30, 2023',
-      status: 'Complete',
-      statusColor: '#52c41a'
-    },
-    {
-      key: '8',
-      orderId: 'CM9808',
-      user: 'Kate Morrison',
-      userAvatar: '/src/assets/contact2.png',
-      project: 'API Integration',
-      address: 'Tech Park Silicon Valley',
-      date: 'Jan 28, 2023',
-      status: 'Pending',
-      statusColor: '#13c2c2'
-    },
-    {
-      key: '9',
-      orderId: 'CM9809',
-      user: 'Drew Cano',
-      userAvatar: '/src/assets/contact3.png',
-      project: 'Data Analytics',
-      address: 'Business District Chicago',
-      date: 'Jan 25, 2023',
-      status: 'Approved',
-      statusColor: '#faad14'
-    },
-    {
-      key: '10',
-      orderId: 'CM9810',
-      user: 'Orlando Diggs',
-      userAvatar: '/src/assets/contact4.png',
-      project: 'Cloud Migration',
-      address: 'Innovation Hub Austin',
-      date: 'Jan 22, 2023',
-      status: 'Rejected',
-      statusColor: '#8c8c8c'
-    }
-  ];
-
   const allOrderData = React.useMemo(() => {
+    const orderData = [
+      {
+        key: '1',
+        orderId: 'CM9801',
+        user: 'Natali Craig',
+        userAvatar: '/src/assets/contact1.png',
+        project: 'Landing Page',
+        address: 'Meadow Lane Oakland',
+        date: 'Just now',
+        status: 'In Progress',
+        statusColor: '#1890ff'
+      },
+      {
+        key: '2',
+        orderId: 'CM9802',
+        user: 'Kate Morrison',
+        userAvatar: '/src/assets/contact2.png',
+        project: 'CRM Admin pages',
+        address: 'Larry San Francisco',
+        date: 'A minute ago',
+        status: 'Complete',
+        statusColor: '#52c41a'
+      },
+      {
+        key: '3',
+        orderId: 'CM9803',
+        user: 'Drew Cano',
+        userAvatar: '/src/assets/contact3.png',
+        project: 'Client Project',
+        address: 'Bagwell Avenue Ocala',
+        date: '1 hour ago',
+        status: 'Pending',
+        statusColor: '#13c2c2'
+      },
+      {
+        key: '4',
+        orderId: 'CM9804',
+        user: 'Orlando Diggs',
+        userAvatar: '/src/assets/contact4.png',
+        project: 'Admin Dashboard',
+        address: 'Washburn Baton Rouge',
+        date: 'Yesterday',
+        status: 'Approved',
+        statusColor: '#faad14'
+      },
+      {
+        key: '5',
+        orderId: 'CM9805',
+        user: 'Andi Lane',
+        userAvatar: '/src/assets/contact5.png',
+        project: 'App Landing Page',
+        address: 'Nest Lane Olivette',
+        date: 'Feb 2, 2023',
+        status: 'Rejected',
+        statusColor: '#8c8c8c'
+      },
+      {
+        key: '6',
+        orderId: 'CM9806',
+        user: 'Koray Okumus',
+        userAvatar: '/src/assets/contact6.png',
+        project: 'E-commerce Site',
+        address: 'Main Street New York',
+        date: 'Feb 1, 2023',
+        status: 'In Progress',
+        statusColor: '#1890ff'
+      },
+      {
+        key: '7',
+        orderId: 'CM9807',
+        user: 'Natali Craig',
+        userAvatar: '/src/assets/contact1.png',
+        project: 'Mobile App',
+        address: 'Oak Avenue Los Angeles',
+        date: 'Jan 30, 2023',
+        status: 'Complete',
+        statusColor: '#52c41a'
+      },
+      {
+        key: '8',
+        orderId: 'CM9808',
+        user: 'Kate Morrison',
+        userAvatar: '/src/assets/contact2.png',
+        project: 'API Integration',
+        address: 'Tech Park Silicon Valley',
+        date: 'Jan 28, 2023',
+        status: 'Pending',
+        statusColor: '#13c2c2'
+      },
+      {
+        key: '9',
+        orderId: 'CM9809',
+        user: 'Drew Cano',
+        userAvatar: '/src/assets/contact3.png',
+        project: 'Data Analytics',
+        address: 'Business District Chicago',
+        date: 'Jan 25, 2023',
+        status: 'Approved',
+        statusColor: '#faad14'
+      },
+      {
+        key: '10',
+        orderId: 'CM9810',
+        user: 'Orlando Diggs',
+        userAvatar: '/src/assets/contact4.png',
+        project: 'Cloud Migration',
+        address: 'Innovation Hub Austin',
+        date: 'Jan 22, 2023',
+        status: 'Rejected',
+        statusColor: '#8c8c8c'
+      }
+    ];
+
     const extendedData = [];
     for (let i = 0; i < 3; i++) {
       orderData.forEach((item, index) => {
@@ -167,7 +167,7 @@ const OrderList = () => {
       });
     }
     return extendedData;
-  }, [orderData]);
+  }, []);
 
   useEffect(() => {
     let filtered = allOrderData;

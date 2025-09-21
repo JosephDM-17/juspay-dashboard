@@ -39,3 +39,27 @@
    # or
    yarn dev
    ```
+
+4. **Build for production**
+
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+5. **Preview production build**
+
+   ```bash
+   npm run preview
+   # or
+   yarn preview
+   ```
+
+## 🚀 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint errors automatically
