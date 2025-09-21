@@ -6,6 +6,7 @@ import { FiBookOpen } from 'react-icons/fi';
 import { BsFolder } from 'react-icons/bs';
 import { FileTextOutlined, MessageOutlined, RightOutlined, DownOutlined } from '@ant-design/icons';
 import { useTheme } from '../hooks/useTheme';
+import byeWindLogo from '../assets/ByeWind.png';
 
 const { Text } = Typography;
 
@@ -131,7 +132,7 @@ const Sidebar = ({
             }}
           >
             <img 
-              src="/src/assets/ByeWind.png" 
+              src={byeWindLogo} 
               alt="ByeWind" 
               className="h-5 w-auto"
               style={{ 

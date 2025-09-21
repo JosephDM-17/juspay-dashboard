@@ -7,28 +7,44 @@ import {
 } from '@ant-design/icons';
 import { useTheme } from '../hooks/useTheme';
 
+// Import images
+import bugIcon from '../assets/bug.png';
+import userIcon from '../assets/user.png';
+import connectivityIcon from '../assets/connectivity.png';
+import activities1 from '../assets/activities1.png';
+import activities2 from '../assets/activities2.png';
+import activities3 from '../assets/activities3.png';
+import activities4 from '../assets/activities4.png';
+import activities5 from '../assets/activities5.png';
+import contact1 from '../assets/contact1.png';
+import contact2 from '../assets/contact2.png';
+import contact3 from '../assets/contact3.png';
+import contact4 from '../assets/contact4.png';
+import contact5 from '../assets/contact5.png';
+import contact6 from '../assets/contact6.png';
+
 const { Title, Text } = Typography;
 
 const RightSidebar = ({ collapsed, showNotifications, onToggleNotifications }) => {
   const { colors } = useTheme();
   const notifications = [
     {
-      icon: <img src="/src/assets/bug.png" alt="Bug" style={{ width: '16px', height: '16px' }} />,
+      icon: <img src={bugIcon} alt="Bug" style={{ width: '16px', height: '16px' }} />,
       text: 'You have a bug that needs...',
       time: 'Just now'
     },
     {
-      icon: <img src="/src/assets/user.png" alt="User" style={{ width: '16px', height: '16px' }} />,
+      icon: <img src={userIcon} alt="User" style={{ width: '16px', height: '16px' }} />,
       text: 'New user registered',
       time: '59 minutes ago'
     },
     {
-      icon: <img src="/src/assets/bug.png" alt="Bug" style={{ width: '16px', height: '16px' }} />,
+      icon: <img src={bugIcon} alt="Bug" style={{ width: '16px', height: '16px' }} />,
       text: 'You have a bug that needs...',
       time: '12 hours ago'
     },
     {
-      icon: <img src="/src/assets/connectivity.png" alt="Connectivity" style={{ width: '16px', height: '16px' }} />,
+      icon: <img src={connectivityIcon} alt="Connectivity" style={{ width: '16px', height: '16px' }} />,
       text: 'Andi Lane subscribed to you',
       time: 'Today, 11:59 AM'
     },
@@ -38,27 +54,27 @@ const RightSidebar = ({ collapsed, showNotifications, onToggleNotifications }) =
 
   const activities = [
     {
-      avatar: <img src="/src/assets/activities1.png" alt="Activity 1" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
+      avatar: <img src={activities1} alt="Activity 1" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
       text: 'You have a bug that needs...',
       time: 'Just now'
     },
     {
-      avatar: <img src="/src/assets/activities2.png" alt="Activity 2" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
+      avatar: <img src={activities2} alt="Activity 2" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
       text: 'Released a new version',
       time: '59 minutes ago'
     },
     {
-      avatar: <img src="/src/assets/activities3.png" alt="Activity 3" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
+      avatar: <img src={activities3} alt="Activity 3" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
       text: 'Submitted a bug',
       time: '12 hours ago'
     },
     {
-      avatar: <img src="/src/assets/activities4.png" alt="Activity 4" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
+      avatar: <img src={activities4} alt="Activity 4" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
       text: 'Modified A data in Page X',
       time: 'Today, 11:59 AM'
     },
     {
-      avatar: <img src="/src/assets/activities5.png" alt="Activity 5" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
+      avatar: <img src={activities5} alt="Activity 5" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />,
       text: 'Deleted a page in Project X',
       time: 'Feb 2, 2023'
     }
@@ -67,27 +83,27 @@ const RightSidebar = ({ collapsed, showNotifications, onToggleNotifications }) =
   const contacts = [
     {
       name: 'Natali Craig',
-      avatar: <img src="/src/assets/contact1.png" alt="Contact 1" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact1} alt="Contact 1" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     },
     {
       name: 'Drew Cano',
-      avatar: <img src="/src/assets/contact2.png" alt="Contact 2" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact2} alt="Contact 2" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     },
     {
       name: 'Orlando Diggs',
-      avatar: <img src="/src/assets/contact3.png" alt="Contact 3" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact3} alt="Contact 3" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     },
     {
       name: 'Andi Lane',
-      avatar: <img src="/src/assets/contact4.png" alt="Contact 4" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact4} alt="Contact 4" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     },
     {
       name: 'Kate Morrison',
-      avatar: <img src="/src/assets/contact5.png" alt="Contact 5" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact5} alt="Contact 5" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     },
     {
       name: 'Koray Okumus',
-      avatar: <img src="/src/assets/contact6.png" alt="Contact 6" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+      avatar: <img src={contact6} alt="Contact 6" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
     }
   ];
 

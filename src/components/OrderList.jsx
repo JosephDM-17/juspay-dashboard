@@ -29,6 +29,14 @@ import { useTheme } from '../hooks/useTheme';
 import { IoFilter } from "react-icons/io5";
 import { BiSortAlt2 } from "react-icons/bi";
 
+// Import contact images
+import contact1 from '../assets/contact1.png';
+import contact2 from '../assets/contact2.png';
+import contact3 from '../assets/contact3.png';
+import contact4 from '../assets/contact4.png';
+import contact5 from '../assets/contact5.png';
+import contact6 from '../assets/contact6.png';
+
 const { Title } = Typography;
 const { Search } = Input;
 
@@ -49,7 +57,7 @@ const OrderList = () => {
         key: '1',
         orderId: 'CM9801',
         user: 'Natali Craig',
-        userAvatar: '/src/assets/contact1.png',
+        userAvatar: contact1,
         project: 'Landing Page',
         address: 'Meadow Lane Oakland',
         date: 'Just now',
@@ -60,7 +68,7 @@ const OrderList = () => {
         key: '2',
         orderId: 'CM9802',
         user: 'Kate Morrison',
-        userAvatar: '/src/assets/contact2.png',
+        userAvatar: contact2,
         project: 'CRM Admin pages',
         address: 'Larry San Francisco',
         date: 'A minute ago',
@@ -71,7 +79,7 @@ const OrderList = () => {
         key: '3',
         orderId: 'CM9803',
         user: 'Drew Cano',
-        userAvatar: '/src/assets/contact3.png',
+        userAvatar: contact3,
         project: 'Client Project',
         address: 'Bagwell Avenue Ocala',
         date: '1 hour ago',
@@ -82,7 +90,7 @@ const OrderList = () => {
         key: '4',
         orderId: 'CM9804',
         user: 'Orlando Diggs',
-        userAvatar: '/src/assets/contact4.png',
+        userAvatar: contact4,
         project: 'Admin Dashboard',
         address: 'Washburn Baton Rouge',
         date: 'Yesterday',
@@ -93,7 +101,7 @@ const OrderList = () => {
         key: '5',
         orderId: 'CM9805',
         user: 'Andi Lane',
-        userAvatar: '/src/assets/contact5.png',
+        userAvatar: contact5,
         project: 'App Landing Page',
         address: 'Nest Lane Olivette',
         date: 'Feb 2, 2023',
@@ -104,7 +112,7 @@ const OrderList = () => {
         key: '6',
         orderId: 'CM9806',
         user: 'Koray Okumus',
-        userAvatar: '/src/assets/contact6.png',
+        userAvatar: contact6,
         project: 'E-commerce Site',
         address: 'Main Street New York',
         date: 'Feb 1, 2023',
@@ -115,7 +123,7 @@ const OrderList = () => {
         key: '7',
         orderId: 'CM9807',
         user: 'Natali Craig',
-        userAvatar: '/src/assets/contact1.png',
+        userAvatar: contact1,
         project: 'Mobile App',
         address: 'Oak Avenue Los Angeles',
         date: 'Jan 30, 2023',
@@ -126,7 +134,7 @@ const OrderList = () => {
         key: '8',
         orderId: 'CM9808',
         user: 'Kate Morrison',
-        userAvatar: '/src/assets/contact2.png',
+        userAvatar: contact2,
         project: 'API Integration',
         address: 'Tech Park Silicon Valley',
         date: 'Jan 28, 2023',
@@ -137,7 +145,7 @@ const OrderList = () => {
         key: '9',
         orderId: 'CM9809',
         user: 'Drew Cano',
-        userAvatar: '/src/assets/contact3.png',
+        userAvatar: contact3,
         project: 'Data Analytics',
         address: 'Business District Chicago',
         date: 'Jan 25, 2023',
@@ -148,7 +156,7 @@ const OrderList = () => {
         key: '10',
         orderId: 'CM9810',
         user: 'Orlando Diggs',
-        userAvatar: '/src/assets/contact4.png',
+        userAvatar: contact4,
         project: 'Cloud Migration',
         address: 'Innovation Hub Austin',
         date: 'Jan 22, 2023',

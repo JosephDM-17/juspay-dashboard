@@ -6,6 +6,7 @@ import KPICards from './KPICards';
 import RevenueLineChart from './revenueLineChart';
 import SalesDonutChart from './donutChart';
 import { useTheme } from '../hooks/useTheme';
+import mapImage from '../assets/Map.png';
 const { Title, Text } = Typography;
 
 const DashboardCharts = ({ revenueByLocation, topSellingProducts, kpiData, onNavigateToOrders }) => {
@@ -118,7 +119,7 @@ const DashboardCharts = ({ revenueByLocation, topSellingProducts, kpiData, onNav
             {/* World Map */}
             <div className="mb-6 relative">
               <img 
-                src="/src/assets/Map.png" 
+                src={mapImage} 
                 alt="World Map" 
                 className="w-full h-32 object-contain"
               />
